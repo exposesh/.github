@@ -20,8 +20,8 @@ EXPOSE is your new favourite open source tool for exposing your local services o
 With no installation or configuration required, you can use it.  
 In fact, EXPOSE relies on your SSH client.   
 Authentication is done using the public SSH keys you have on your GitHub account. If you don't have any, you can [read this article](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).  
-So all you have to do to expose, for exemple, `localhost:3000`, is type `ssh -R /:localhost:3000 expose.sh` in your terminal.  
-If you use a different username on your computer than the one you use on GitHub, add the GitHub username to your SSH command (example: `ssh -R /:localhost:3000 yourusername@expose.sh`).
+So all you have to do to expose, for exemple, `localhost:3000`, is type `ssh -R 1:localhost:3000 expose.sh` in your terminal.  
+If you use a different username on your computer than the one you use on GitHub, add the GitHub username to your SSH command (example: `ssh -R 1:localhost:3000 yourusername@expose.sh`).
 
 # Access
 
@@ -68,17 +68,17 @@ By supporting this independent, open-source project through <strong>GitHub Spons
 
 <details>
 <summary>Is it possible to generate several tunnels at once?</summary>
-<strong>Yes</strong>, you can create several tunnels at once by repeating `-R `. For example: <code>ssh -R /:localhost:port1 -R /:localhost:port2 expose.sh</code> 
+<strong>Yes</strong>, you can create several tunnels at once by repeating `-R `. For example: <code>ssh -R 1:localhost:port1 -R 2:localhost:port2 expose.sh</code> 
 </details>
 
 <details>
 <summary>I bought a subscription but when I connect to EXPOSE, it is still the free version?</summary>
-Do not panic! Check if your computer's current username matches the username of your GitHub account. If it does not, add it to your SSH command. For example: <code>ssh -R /:localhost:port yourgithubusername@expose.sh</code>
+Do not panic! Check if your computer's current username matches the username of your GitHub account. If it does not, add it to your SSH command. For example: <code>ssh -R 1:localhost:port yourgithubusername@expose.sh</code>
 </details>
 
 <details>
 <summary>The username matches well, but I am still on the free version of EXPOSE...</summary>
-Do you have a private SSH key on your device that corresponds to a public SSH key on your GitHub account? You can find your GitHub's public SSH keys by clicking on your profile picture, then on Settings, then in the "Access" section, click on "SSH and GPG keys". Perhaps you have too many SSH keys on your device and your SSH client is getting tangled up? In that case, specify in your command where your private SSH key is located: <code>ssh -o IdentitiesOnly=yes -i /path/to/private/key -R /:localhost:port yourgithubusername@expose.sh</code>
+Do you have a private SSH key on your device that corresponds to a public SSH key on your GitHub account? You can find your GitHub's public SSH keys by clicking on your profile picture, then on Settings, then in the "Access" section, click on "SSH and GPG keys". Perhaps you have too many SSH keys on your device and your SSH client is getting tangled up? In that case, specify in your command where your private SSH key is located: <code>ssh -o IdentitiesOnly=yes -i /path/to/private/key -R 1:localhost:port yourgithubusername@expose.sh</code>
 </details>
 
 <details>
@@ -93,7 +93,7 @@ Ensure that your local application is reachable on localhost with the specified 
 
 <details>
 <summary>How is it possible to have my SSH client automatically reconnect to EXPOSE?</summary>
-It is true that disconnections are not fun... You can modify your SSH command in this way to reconnect automatically: <code>until ssh -R /:localhost:port expose.sh; do echo Reconnecting...; done</code><br>Ah, ha, ha, ha, stayin' alive, stayin' alive 🎵😌✊
+It is true that disconnections are not fun... You can modify your SSH command in this way to reconnect automatically: <code>until ssh -R 1:localhost:port expose.sh; do echo Reconnecting...; done</code><br>Ah, ha, ha, ha, stayin' alive, stayin' alive 🎵😌✊
 </details>
 
 <details>
