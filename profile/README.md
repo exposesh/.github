@@ -31,7 +31,7 @@ Of course, if you wish, you can add stars to all the repositories. 😄
 # Free and Premium
 
 Infrastructure is expensive, but at the same time everyone should have access to a high-performance tool of this kind.  
-The free version of EXPOSE is limited to two local service exposures at a time, with a bandwidth of 100 kB/s and a maximum duration of 15 minutes per use.  
+The free version of EXPOSE is limited to two local service exposures at a time, with a bandwidth of 100 kb/s and a maximum duration of 15 minutes per use.  
 Of course, you can reconnect as often as you like.
 
 By supporting this independent, open-source project through GitHub Sponsors and a monthly subscription of $3, you unlock all the features.  
