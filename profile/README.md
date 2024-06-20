@@ -8,10 +8,12 @@
 </h1>
 <p align="center">
     <a href="#about">About</a> •
-    <a href="#access">Access</a> •
     <a href="#demo">Demo</a> •
-    <a href="#free-and-premium">Free and Premium</a> •
     <a href="#features">Features</a> •
+    <a href="#use-cases">Use-cases</a> •
+    <a href="#access">Access</a> •
+    <a href="#free-and-premium">Free and Premium</a> •
+    <a href="#learn-more">Learn more</a>
     <a href="#faqs">FAQs</a>
 </p>
 
@@ -24,14 +26,36 @@ Authentication is done using the public SSH keys you have on your GitHub account
 So all you have to do to expose, for exemple, `localhost:3000`, is type `ssh -R 1:localhost:3000 expose.sh` in your terminal.  
 If you use a different username on your computer than the one you use on GitHub, add the GitHub username to your SSH command (example: `ssh -R 1:localhost:3000 yourusername@expose.sh`).
 
+# Demo
+
+https://github.com/exposesh/.github/assets/81755261/b777c15d-6024-42a9-8aa9-1554179ffc14
+
+# Features
+
+- Nothing to install: use only your terminal and SSH client
+- Nothing to configure: automatically retrieve public SSH keys from your GitHub account to authenticate yourself
+- Custom URL based on your GitHub username
+- HTTP & HTTPS & WebSocket supported
+- Displays a QR code for easy testing on a mobile device
+- Several services can be exposed at the same time
+- Distributed system designed for speed
+- Global routing for the fastest possible access to your services on the other side of the world
+- Secure
+- Open source
+
+# Use-cases
+
+- Demos and presentations: streamlines the presentation of your applications or services by providing the capability to access them seamlessly from any device with internet connectivity
+- Mobile development: run the back-end for your Android or iOS app locally and make it accessible to your app
+- Webhook testing: highly beneficial for the testing and troubleshooting of webhooks, as it facilitates the exposure of a local endpoint. This makes it simple to test webhook requests from external services such as payment gateways, messaging platforms or API
+- Expose your home server: make your local server, like your Raspberry Pi, easily accessible on the public Internet
+- Easily test your app: ensure your application looks and functions flawlessly on devices of all shapes and sizes
+- And many more...
+
 # Access
 
 To prevent malicious use of EXPOSE, you should add a star to one of the project repositories.  
 Of course, if you wish, you can add stars to all the repositories. 😄
-
-# Demo
-
-https://github.com/exposesh/.github/assets/81755261/b777c15d-6024-42a9-8aa9-1554179ffc14
 
 # Free and Premium
 
@@ -39,7 +63,7 @@ Infrastructure is expensive, but at the same time everyone should have access to
 The free version of EXPOSE is limited to two local service exposures at a time, with a bandwidth of 100 kb/s and a maximum duration of 15 minutes per use.  
 Of course, you can reconnect as often as you like.
 
-By supporting this independent, open-source project through GitHub Sponsors and a monthly subscription of $3, you unlock all the features.  
+By supporting this independent, open-source project through GitHub Sponsors and a monthly subscription of $5, you unlock all the features.  
 
 # Learn more
 
