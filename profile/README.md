@@ -63,7 +63,7 @@ The free version of EXPOSE is limited to two local service tunnels at a time, wi
 
 <details>
 <summary>How can I access the unlimited version of EXPOSE?</summary>
-By supporting this independent, open-source project through <strong>GitHub Sponsors</strong> and a monthly subscription of $3, you unlock all the features. 
+By supporting this independent, open-source project through <strong>GitHub Sponsors</strong> and a monthly subscription of $5, you unlock all the features. 
 </details>
 
 <details>
