@@ -9,6 +9,7 @@
 <p align="center">
     <a href="#about">About</a> •
     <a href="#access">Access</a> •
+    <a href="#demo">Demo</a> •
     <a href="#free-and-premium">Free and Premium</a> •
     <a href="#features">Features</a> •
     <a href="#faqs">FAQs</a>
@@ -27,6 +28,10 @@ If you use a different username on your computer than the one you use on GitHub,
 
 To prevent malicious use of EXPOSE, you should add a star to one of the project repositories.  
 Of course, if you wish, you can add stars to all the repositories. 😄
+
+# Demo
+
+https://github.com/exposesh/.github/assets/81755261/b777c15d-6024-42a9-8aa9-1554179ffc14
 
 # Free and Premium
 
