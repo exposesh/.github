@@ -13,7 +13,7 @@
     <a href="#use-cases">Use-cases</a> •
     <a href="#access">Access</a> •
     <a href="#free-and-premium">Free and Premium</a> •
-    <a href="#learn-more">Learn more</a>
+    <a href="#learn-more">Learn more</a> •
     <a href="#faqs">FAQs</a>
 </p>
 
